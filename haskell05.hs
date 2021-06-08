@@ -30,8 +30,3 @@ andTable :: [(Bool, Bool, Bool)]
 andTable = [(boolX, boolY, boolX && boolY) | boolX <- res, boolY <- res]
   where res = [True,False]
 
-main :: IO()
-main = do
-  putStr "CPF: "
-  cpf <- getLine
-  putStrLn cpf
